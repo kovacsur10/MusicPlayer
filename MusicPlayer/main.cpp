@@ -1,7 +1,5 @@
 #include <iostream>
-#include <SDL.h>
-
-#undef main
+#include "GraphicsEngine.h"
 
 int main() {
   std::cout << "Csaaaaaaaaaaaaaaa" << std::endl;
