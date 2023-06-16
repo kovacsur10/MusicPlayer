@@ -155,12 +155,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="album.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="musician.cpp" />
+    <ClCompile Include="musicpiece.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\GraphicsEngine\GraphicsEngineLib\GraphicsEngineLib.vcxproj">
       <Project>{15ae44ec-28ee-4acb-a49d-cf4c88af4b56}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Album.h" />
+    <ClInclude Include="Musician.h" />
+    <ClInclude Include="MusicPiece.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
