@@ -1,20 +1,16 @@
 #pragma once
 #include <string>
 #include <filesystem>
+#include "types.h"
 
-enum class Extension {
-	WAV,
-	MP3,
-	OGG,
-	FLAC
-};
 
 class MusicPiece {
 public:
-	MusicPiece(std::string name, Extension extension, std::filesystem::path path) : name(name), extension(extension), path(path) {}
+	MusicPiece(const std::string& name, const Extension& extension, const std::filesystem::path& path) : name(name), extension(extension), path(path) {}
 	~MusicPiece(){}
 	// getterek
 	// meg a ki tudja még milyen lófasz :D
+
 
 private:
 	std::string           name;

@@ -3,6 +3,7 @@
 #include <string>
 #include <filesystem>
 #include "MusicPiece.h"
+#include <iostream>
 
 
 class Album {
@@ -12,6 +13,8 @@ public:
 	~Album(){}
 
 	void addMusic( const MusicPiece& musicpiece);
+
+	friend std::ostream& operator<<(std::ostream& os, const Album& album);
 
 private:
 	std::string             name;

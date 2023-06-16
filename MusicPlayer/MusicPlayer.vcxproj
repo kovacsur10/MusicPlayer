@@ -159,6 +159,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="musician.cpp" />
     <ClCompile Include="musicpiece.cpp" />
+    <ClCompile Include="types.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\GraphicsEngine\GraphicsEngineLib\GraphicsEngineLib.vcxproj">
@@ -169,6 +170,8 @@
     <ClInclude Include="Album.h" />
     <ClInclude Include="Musician.h" />
     <ClInclude Include="MusicPiece.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
