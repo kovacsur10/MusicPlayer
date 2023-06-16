@@ -4,7 +4,7 @@
 
 class Musician {
 public:
-	Musician(std::string name){}
+	Musician(std::string name) : name(name) {}
 	~Musician(){}
 
 private:
