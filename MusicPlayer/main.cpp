@@ -36,3 +36,5 @@ int main() {
         std::cout << album << std::endl;
     }
 }
+
+// a polcra akkor kerülhet fel, ha van benne zeneszám, ha nincs akkor ne
