@@ -13,6 +13,8 @@ public:
 	~Album(){}
 
 	void addMusic( const MusicPiece& musicpiece);
+	size_t size();
+	bool empty();
 
 	friend std::ostream& operator<<(std::ostream& os, const Album& album);
 
