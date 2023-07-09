@@ -124,7 +124,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>T:\GraphicsEngineLib;T:\SDL2.0\SDL2_ttf-2.0.15\include;T:\SDL2.0\SDL2_image-2.0.5\include;T:\SDL2.0\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>T:\programs\GraphicsEngine\;T:\SDL2.0\SDL2_ttf-2.0.15\include;T:\SDL2.0\SDL2_image-2.0.5\include;T:\SDL2.0\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -162,16 +162,16 @@
     <ClCompile Include="types.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GraphicsEngine\GraphicsEngineLib\GraphicsEngineLib.vcxproj">
-      <Project>{15ae44ec-28ee-4acb-a49d-cf4c88af4b56}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Album.h" />
     <ClInclude Include="Musician.h" />
     <ClInclude Include="MusicPiece.h" />
     <ClInclude Include="types.h" />
     <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GraphicsEngine\GraphicsEngineLib\GraphicsEngineLib.vcxproj">
+      <Project>{15ae44ec-28ee-4acb-a49d-cf4c88af4b56}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

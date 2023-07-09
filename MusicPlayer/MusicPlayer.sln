@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MusicPlayer", "MusicPlayer.vcxproj", "{3FA96D1B-744B-4FA3-BCA1-F65E5B37444D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsEngineLib", "T:\GraphicsEngineLib\GraphicsEngineLib.vcxproj", "{15AE44EC-28EE-4ACB-A49D-CF4C88AF4B56}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsEngineLib", "..\..\GraphicsEngine\GraphicsEngineLib\GraphicsEngineLib.vcxproj", "{15AE44EC-28EE-4ACB-A49D-CF4C88AF4B56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
