@@ -7,6 +7,13 @@
 #include "GraphicsEngine.h"
 #include "types.h"
 
+#include "GraphicsEngine.h"
+#include "Image.h"
+#include "Button.h"
+
+using namespace SDLEngine;
+using namespace std::literals::string_literals;
+
 // lesz kép, a fájl neve, de az album neve is, elõadó neve
 std::vector<Album> albums;
 
@@ -35,6 +42,35 @@ int main() {
     for (const auto& album : albums) {
         std::cout << album << std::endl;
     }
+
+
+
+    GraphicsEngine& engine = GraphicsEngine::GetInstance();
+    engine.CreateWindow("almafa"s, 800, 500, 0);
+    engine.LoadFont("arial"s, "c:\\DEVS\\0001CODING\\C++projekt\\images\\arial.ttf"s);
+
+
+    ReturnCode returncode = engine.LoadImage("futyi"s, "T:\\images\\futyifeles.jpg"s);
+
+    auto& registry = engine.GetRegistry();
+    auto id = registry.Create<Image>(Dimension(194, 260), "futyi"s);
+
+    auto image = dynamic_cast<Image*>(registry.Get(id));
+    image->Move(Point(200, 200));
+
+    engine.AddItemToDraw(id);
+
+    auto buttonId = registry.Create<Button>(ButtonType::Type::PRIMARY, Dimension(50, 40), "start"s);
+    auto button = dynamic_cast<Button*>(registry.Get(buttonId));
+    button->bind("start"s, BoundableTypes::STRING, "Start"s);
+
+    DrawableCallbackFunctions startCallback([&button](const Point& buttonClicked) { button->Hide(); });
+    button->AddCallback(Events::LEFT_MOUSE_BUTTON_DOWN, startCallback);
+    button->Move(Point(20, 20));
+
+    engine.AddItemToDraw(buttonId);
+
+    engine.Start();
 }
 
 // a polcra akkor kerülhet fel, ha van benne zeneszám, ha nincs akkor ne
