@@ -11,6 +11,11 @@ public:
 	// getterek
 	// meg a ki tudja még milyen lófasz :D
 
+	void getPiece();
+	void getAuthor();
+	void getAlbum();
+	void getStyle(); // TODO hogyan mondom meg, hogy adott darab, lemez milyen stílusban van ?
+
 
 private:
 	std::string           name;
