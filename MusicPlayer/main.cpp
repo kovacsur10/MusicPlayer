@@ -47,10 +47,10 @@ int main() {
 
     GraphicsEngine& engine = GraphicsEngine::GetInstance();
     engine.CreateWindow("almafa"s, 800, 500, 0);
-    engine.LoadFont("arial"s, "c:\\DEVS\\0001CODING\\C++projekt\\images\\arial.ttf"s);
+    //engine.LoadFont("arial"s, "c:\\DEVS\\0001CODING\\C++projekt\\images\\arial.ttf"s);
+    engine.LoadFont("arial"s, "resources\\fonts\\arial.ttf"s);
 
-
-    ReturnCode returncode = engine.LoadImage("futyi"s, "T:\\images\\futyifeles.jpg"s);
+    ReturnCode returncode = engine.LoadImage("futyi"s, "resources\\images\\futyifeles.jpg"s);
 
     auto& registry = engine.GetRegistry();
     auto id = registry.Create<Image>(Dimension(194, 260), "futyi"s);
