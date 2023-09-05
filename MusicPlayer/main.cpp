@@ -6,6 +6,7 @@
 #include "MusicPiece.h"
 #include "GraphicsEngine.h"
 #include "types.h"
+#include "utils.h"
 
 #include "GraphicsEngine.h"
 #include "Image.h"
@@ -42,7 +43,6 @@ int main() {
     for (const auto& album : albums) {
         std::cout << album << std::endl;
     }
-
 
 
     GraphicsEngine& engine = GraphicsEngine::GetInstance();
